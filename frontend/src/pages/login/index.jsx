@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AuthNavigation from '../../components/ui/AuthNavigation';
-import LoginHeader from './components/LoginHeader';
+import LoginHeader from './components/Loginheader';
 import LoginForm from './components/Loginform';
 import ForgotPasswordLink from './components/Forgotpasswordlink';
 
