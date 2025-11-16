@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AuthNavigation from '../../components/ui/AuthNavigation';
 import LoginHeader from './components/LoginHeader';
-import LoginForm from './Components/Loginform';
+import LoginForm from './components/LoginForm';
 import ForgotPasswordLink from './components/Forgotpasswordlink';
 
 const LoginPage = () => {
