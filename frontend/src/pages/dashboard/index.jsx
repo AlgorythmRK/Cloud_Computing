@@ -5,7 +5,6 @@ import ExpenseChart from "./components/ExpenseChart";
 import AddExpenseForm from "./components/addexpenseForm";
 import ExpenseTable from "./components/ExpenseTable";
 import InsightCard from "./components/InsightCard";
-import FinMitraLogo from "../../components/FinMitraLogo";
 import { API_BASE_URL, getAuthHeaders } from "../../config/api";
 
 const Dashboard = () => {
