@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import WelcomeHeader from './components/WelcomeHeader';
 import SignupForm from './components/SignupForm';
-import SecurityTrustSignals from './components/SecurityTrustSignals';
+import SecurityTrustSignals from './components/Securitytrustsignals';
 import AuthNavigation from '../../components/ui/AuthNavigation';
 
 const SignupPage = () => {
