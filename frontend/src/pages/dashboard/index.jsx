@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import DashboardNavigation from "../../components/ui/DashboardNavigation";
 import SummaryCard from "./components/SummaryCard";
 import ExpenseChart from "./components/ExpenseChart";
-import AddExpenseForm from "./components/AddExpenseForm";
+import AddExpenseForm from "./components/addexpenseForm";
 import ExpenseTable from "./components/ExpenseTable";
 import InsightCard from "./components/InsightCard";
 import FinMitraLogo from "../../components/FinMitraLogo";
