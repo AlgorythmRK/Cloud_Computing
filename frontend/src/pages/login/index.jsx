@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AuthNavigation from '../../components/ui/AuthNavigation';
-import LoginHeader from './components/LoginHeader';
-import LoginForm from './components/LoginForm';
-import ForgotPasswordLink from './components/ForgotPasswordLink';
+import LoginHeader from './Components/LoginHeader';
+import LoginForm from './Components/LoginForm';
+import ForgotPasswordLink from './Components/ForgotPasswordLink';
 
 const LoginPage = () => {
   const navigate = useNavigate();
