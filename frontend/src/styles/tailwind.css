@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Premium Fintech Color System */
+    --color-background: #FFFFFF; /* pure-white */
+    --color-foreground: #0F172A; /* slate-900 for max contrast */
+    --color-border: rgba(226, 232, 240, 0.8); /* slate-200 with opacity */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #2563EB; /* blue-600 fintech primary */
+    
+    /* Card & Surface Colors */
+    --color-card: #FFFFFF; /* white for premium feel */
+    --color-card-foreground: #0F172A; /* slate-900 */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #0F172A; /* slate-900 */
+    
+    /* Muted Colors */
+    --color-muted: #F8FAFC; /* slate-50 */
+    --color-muted-foreground: #64748B; /* slate-500 */
+    
+    /* Primary Brand Colors - FinTech Blue System */
+    --color-primary: #2563EB; /* blue-600 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #334155; /* slate-700 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #60A5FA; /* blue-400 for highlights */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Success Colors */
+    --color-success: #059669; /* emerald-600 */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #D97706; /* amber-600 */
+    --color-warning-foreground: #FFFFFF; /* white */
+    
+    /* Error/Destructive Colors */
+    --color-error: #DC2626; /* red-600 */
+    --color-error-foreground: #FFFFFF; /* white */
+    --color-destructive: #DC2626; /* red-600 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Premium Fintech Utilities */
+    --fintech-blue: #2563EB;
+    --fintech-blue-light: #60A5FA;
+    --fintech-dark: #0F172A;
+    --fintech-gray: #334155;
+    --fintech-gray-light: #64748B;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  /* Premium Typography Hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold tracking-tight;
+  }
+
+  /* Data/Numerical Display */
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Premium Shadow System */
+  .shadow-subtle {
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 4px 12px rgba(15, 23, 42, 0.04);
+  }
+
+  .shadow-elevated {
+    box-shadow: 0 4px 6px rgba(15, 23, 42, 0.07), 0 10px 25px rgba(15, 23, 42, 0.1);
+  }
+
+  .shadow-card {
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12), 0 1px 2px rgba(15, 23, 42, 0.24);
+  }
+
+  .shadow-btn-glow {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .shadow-btn-glow:hover {
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.3);
+  }
+
+  /* Premium Micro-interactions */
+  .hover-lift {
+    @apply transition-all duration-200 ease-out hover:scale-[1.02] hover:-translate-y-1;
+  }
+
+  .smooth-transition {
+    @apply transition-all duration-300 ease-out;
+  }
+.btn-glow  {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  /* Premium Background Gradients */
+  .bg-fintech-gradient {
+    background: linear-gradient(135deg, #2563EB 0%, #60A5FA 100%);
+  }
+
+  .bg-fintech-gradient-dark {
+    background: linear-gradient(135deg, #1e40af 0%, #2563EB 100%);
+  }
+
+  /* Professional Animation Keyframes */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.3s ease-out;
+  }
+
+  /* Financial Data Styling */
+  .financial-positive  {
+    @apply text-success;
+  }
+  
+  .financial-negative  {
+    @apply text-error;
+  }
+  
+  .financial-neutral  {
+    @apply text-muted-foreground;
+  }
+
+  /* Premium Button Styles */
+.btn-primary  {
+    @apply bg-fintech-gradient text-white font-semibold;
+    @apply rounded-xl px-8 py-3 shadow-elevated hover-lift btn-glow;
+  }
+.btn-secondary  {
+    @apply bg-white border-2 border-slate-200;
+    @apply rounded-xl px-8 py-3 shadow-subtle hover-lift smooth-transition;
+  }
+  
+  /* Premium Card Styles */
+  .card-premium {
+    @apply bg-white rounded-2xl shadow-card border border-slate-100;
+    @apply hover:shadow-elevated smooth-transition;
+  }
+
+  .card-feature {
+    @apply card-premium p-8 hover-lift;
+  }
+
+  /* Professional Form Inputs */
+.input-premium  {
+    @apply bg-white border border-slate-200 rounded-xl px-4 py-3;
+    @apply focus:ring-4 focus:ring-blue-100;
+    @apply transition-all duration-200 ease-out;
+  }
+}
